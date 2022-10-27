@@ -1,0 +1,37 @@
+{
+  "license": "AGPL-3.0-only",
+  "author": "evan.network GmbH",
+  "description": "evan.network admin smart contracts",
+  "devDependencies": {
+    "@evan.network/api-blockchain-core": "^2.14.0",
+    "@types/chai": "^4.1.7",
+    "@types/chai-as-promised": "^7.1.0",
+    "@types/mocha": "^5.2.7",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "ipfs-api": "^26.1.2",
+    "mocha": "^6.2.0",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.3",
+    "web3": "2.0.0-alpha"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "homepage": "https://evannetwork.github.io/",
+  "keywords": [
+    "blockchain",
+    "ethereum",
+    "smart-contracts"
+  ],
+  "main": "index.js",
+  "name": "@evan.network/smart-contracts-admin",
+  "scripts": {
+    "install": "./scripts/install-additional-contracts.sh",
+    "testunit": "mocha --inspect -r ts-node/register $*",
+    "testunitbail": "mocha -b --inspect -r ts-node/register $*",
+    "testunitbrk": "mocha --inspect-brk -r ts-node/register $*"
+  },
+  "version": "2.4.0",
+  "dependencies": {}
+}

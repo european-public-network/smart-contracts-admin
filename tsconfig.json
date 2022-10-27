@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "declaration": true,
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "lib": [
+      "es2017"
+    ],
+    "module": "commonjs",
+    "outDir": "./dist",
+    "paths": {},
+    "rootDir": "./src",
+    "target": "es2017"
+  },
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts"
+  ],
+  "include": [
+    "src/**/*"
+  ]
+}
